@@ -9,6 +9,11 @@
     line-height: 20px;
 }
 
+.navigation-item.w-nav-link {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
 .navigation-item:hover{
     opacity: .9;
 }
@@ -19,13 +24,13 @@
 
 .navigation-item.w--current{
     opacity: 1;
-    color: #69c8d9;
+    color: #32343a;
     font-weight: 600;
 }
 
 .navigation-item.w--current:hover{
     opacity: .8;
-    color: #32343a;
+    color: #69c8d9;
 }
 
 .navigation-item.w--current:active{
@@ -108,3 +113,74 @@
 .logo-link {
     padding-left: 0;
 }
+
+.menu-button {
+    padding: 0;
+}
+
+.menu-button.w--open {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.menu-button, .menu-button.w--open {
+    flex: none;
+}
+
+/* ================================================= news =================================================================== */
+
+.heading-3 {
+    text-align: center;
+    font-weight: 300;
+}
+
+#w-node-_698786f4-99b9-5af2-ec4f-8db9444bc9ef-294184bc {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1 1fr 1fr 1fr;
+    display: grid;
+}
+
+@media screen and (max-width: 479px) {
+    #w-node-_698786f4-99b9-5af2-ec4f-8db9444bc9ef-294184bc{
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1 1fr 1fr 1fr;
+    }
+}
+
+#w-node-_9add9761-8ed3-92dd-8a7f-47a444457864-294184bc {
+    grid-area: span 1/span 2/span 1/span 2;
+    grid-column: span 4/span 4;
+}
+
+#w-node-_9add9761-8ed3-92dd-8a7f-47a444457864-294184bc {
+    grid-column: span 4/span 4;
+}
+
+#w-node-_98c3f84e-bede-5066-30c0-3a79287e9a93-294184bc, #w-node-_9d0fc31f-1ddb-4a04-5cea-143c15ed9fe7-294184bc {
+    grid-area: span 2/ span 2/ span 2/ span 2;
+}
+
+#w-node-_98c3f84e-bede-5066-30c0-3a79287e9a93-294184bc, #w-node-_9d0fc31f-1ddb-4a04-5cea-143c15ed9fe7-294184bc {
+    grid-area: span 1/ span 4/ span 1/ span 4;
+}
+
+.w-layout-cell {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: start;
+}
+
+@media screen and (max-width: 479px) {
+    .cell {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .cell-2 {
+        display: flex;
+    }
+}
+
