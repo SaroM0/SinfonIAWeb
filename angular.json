@@ -21,12 +21,13 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
+              "src/icon-pepper-png",
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
-            ],
+           ],
             "scripts": []
           },
           "configurations": {
@@ -83,16 +84,20 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/favicon.ico",
+              "src/icon-pepper-png",
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
-            ],
+           ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "478012d9-93cd-4fb3-bcd2-c5528f36957b"
   }
 }
