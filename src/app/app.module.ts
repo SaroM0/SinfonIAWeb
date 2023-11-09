@@ -8,20 +8,25 @@ import { HomeComponent } from './home/home.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { ToolsComponent } from './tools/tools.component';
+import { PageNotFoundComponent } from './pageNotFound/pageNotFound.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'tools', component: ToolsComponent },
+  { path: '', redirectTo: '/home', pathMatch: "full"},
+  { path: '**', component: PageNotFoundComponent},
+
   
 ];
 
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
       AboutComponent,
       HomeComponent,
-      ToolsComponent
+      ToolsComponent,
+      PageNotFoundComponent
    ],
   imports: [
     BrowserModule,
