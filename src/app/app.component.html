@@ -8,129 +8,15 @@
       <a aria-current="page" class="logo-link w-nav brand w--current"><img src="https://electricayelectronica.uniandes.edu.co/sites/default/files/estudiantes/SinfonIA.png" width="104" sizes="104px" srcset="" alt="" class="logo-image"></a>
       <div class="navigation-wrap"> 
         <nav role="navigation" class="navigation-items w-nav-menu">
-          <a routerLink="/" routerLinkActive="" aria-current="page" class ="navigation-item w-nav-link w--current">Home</a>
-          <a routerLink="about" class ="navigation-item w-nav-link w--current">About Us</a>
-          <a routerLink="tools" class ="navigation-item w-nav-link w--current">Tools</a>
+          <a routerLink="/" routerLinkActive="active" aria-current="page" class ="navigation-item w-nav-link w--current">Home</a>
+          <a routerLink="about" routerLinkActive="active" class ="navigation-item w-nav-link w--current">About Us</a>
+          <a routerLink="tools" routerLinkActive="active" class ="navigation-item w-nav-link w--current">Tools</a>
         </nav>
         <div class="menu-button w-nav-button"><img src="" width="22" alt="" class="menu-icon"> </div>
       </div>
     </div>
   </div>
 
-  <!-- slider ---------------------------------------------------------------------------------------------------------------------->
+  <router-outlet></router-outlet>
 
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" height="665px" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18b29bce2ca%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18b29bce2ca%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.9187469482422%22%20y%3D%22217.76000022888184%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18b29bce2d0%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18b29bce2d0%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.31874084472656%22%20y%3D%22217.76000022888184%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18b29bce2d1%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18b29bce2d1%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22217.76000022888184%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Third slide">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only"></span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only"></span>
-    </a>
-  </div>
-
-  <!-- news ------------------------------------------------------------------------------------------------------------>
-
-  <section>
-    <h1 class="heading-3" style="margin: 20px">Recent News</h1>
-    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin: 10px; background-color:rgb(210, 210, 210)">
-      <div class="col-md-3">
-        <div class="card h-100">
-          <img src="https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Updated on xxx</small>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card h-100">
-          <img src="https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">fuimos a italia</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Updated on xxx</small>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card h-100">
-          <img src="https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Updated on xxx</small>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card h-100">
-          <img src="https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Updated on xxx</small>
-          </div>
-        </div>
-      </div>
-      <div style="margin-top: 30px;"></div>
-    </div>
-  </section>
-
- <!-- Projects ----------------------------------------------------------------------------------------------------------------------->
-  <section>
-    <h1 class="heading-3" style="margin: 20px">Projects</h1>
-    
-  </section>
-
-<!-- Contact ------------------------------------------------------------------------------------------------------------------------->
-
-
-<!-- Footer -------------------------------------------------------------------------------------------------------------------------->
-<footer>
-  <div class="footer-wrap">
-      <div class="div-block-2">
-          <a href="https://uniandes.edu.co" target="_blank" class="footer-item">
-              <img src="assets\logoInv.png" loading="lazy" width="33" alt="" class="webflow-logo-tiny">
-              <div class="paragraph-tiny">UNIVERSIDAD DE LOS ANDES, BOGOTÁ</div>
-          </a>
-          <a href="https://www.instagram.com/sinfonia_uniandes/" target="_blank" class="footer-item">
-              <img src="assets/logoInstagram.png" loading="lazy" width="33" alt="">
-              Instagram
-          </a>
-      </div>
-      <div class="footer-links">
-          <img src="assets\icon-pepper.png" loading="lazy" width="30" alt="">
-      </div>
-      <div class="text-block">This page is administered by SinfonIA web team</div>
-      <div style="margin-top: 30px;"></div>
-  </div>
-  <div class="footer-2">Property of SinfonIA. SinfonIA is a research group of the Universidad de Los Andes. © 2023 SinfonIA Research Group. Bogotá, Colombia</div>
-</footer>
 </body>

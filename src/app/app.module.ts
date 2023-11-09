@@ -7,17 +7,21 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { ToolsComponent } from './tools/tools.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'tools', component: ToolsComponent },
+  
 ];
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
       AboutComponent,
-      HomeComponent
+      HomeComponent,
+      ToolsComponent
    ],
   imports: [
     BrowserModule,
