@@ -1,12 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
 
-.body {
-  color: #1a1b1f;
-  font-family: Montserrat, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-}
 
 /* ================================================= news =================================================================== */
 
@@ -18,15 +10,6 @@
 
 /* ============================================ projects ========================================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
-
-body {
-  font-family: "Baloo 2", cursive;
-  font-size: 16px;
-  color: #ffffff;
-  text-rendering: optimizeLegibility;
-  font-weight: initial;
-}
 
 .dark {
   background: snow;
@@ -342,11 +325,11 @@ a:hover {
   }
 
   .blue:before {
-    background-image: linear-gradient(-80deg, rgba(0, 118, 189, 0.1), transparent 50%);
+    background-image: linear-gradient(-80deg, rgba(255, 255, 255, 0.1), transparent 50%);
   }
 
   .blue:nth-child(2n):before {
-    background-image: linear-gradient(80deg, rgba(0, 118, 189, 0.1), transparent 50%);
+    background-image: linear-gradient(80deg, rgba(255, 255, 255, 0.1), transparent 50%);
   }
 
   .red:before {
@@ -365,3 +348,5 @@ a:hover {
     background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
   }
 }
+
+/* contact us */
