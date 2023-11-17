@@ -6,7 +6,7 @@
     margin-right: 30px;
 }
 
-container {
+.container {
     width: 100%;
     max-width: 1140px;
     margin: auto;
@@ -27,7 +27,7 @@ container {
     display: grid;
 }
 
-intro {
+.intro {
     grid-column-gap: 80px;
     grid-row-gap: 30px;
     grid-template: ". ."
@@ -68,7 +68,7 @@ intro {
 }
 
 #about2 {
-    grid-area: 1 / 2 / 2 /3;
+    grid-area: 1 / 2 / 2 / 2;
 }
 
 .about-item {
@@ -92,9 +92,60 @@ intro {
 }
 
 .img-team {
-    width: 900px;
-    height: 100%;
+    width: 300;
 }
 
-/* sinfonIA description ======================================================================================================= */
+/* vision ======================================================================================================= */
 
+.vision {
+    grid-column-gap: 80px;
+    grid-row-gap: 30px;
+    grid-template: ". ."
+    / 1fr 1fr;
+    margin-bottom: 140px;
+  }
+  
+  .vision {
+    width: 80%;
+    grid-row-gap: 50px;
+    text-align: center;
+    grid-template: "."
+                   "."
+                   / 1fr;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .vision {
+    width: 70%;
+    max-width: 470px;
+    grid-template-columns: 1fr;
+  }
+  
+  .vision {
+    width: 100%;
+    max-width: none;
+    grid-template-columns: 1fr;
+  }
+  
+  #v1 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  
+  .v2 {
+    padding-right: 60px;
+  }
+  
+  .v2 {
+    padding-right: 0;
+  }
+  
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 46px;
+    text-align: left;
+    font-family: Montserrat, sans-serif;
+  }
