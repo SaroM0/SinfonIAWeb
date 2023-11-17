@@ -170,9 +170,9 @@
   .tl-item {
     transform: translate3d(0, 0, 0);
     position: relative;
-    width: 25%;
-    height: 100vh;
-    min-height: 600px;
+    width: 35%;
+    height: 10vh;
+    min-height: 500px;
     color: #fff;
     overflow: hidden;
     transition: width 0.5s ease;
@@ -238,7 +238,6 @@
   }
   
   .tl-content h1 {
-    font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #ffffff;
     font-size: 1.44rem;
     font-weight: normal;
