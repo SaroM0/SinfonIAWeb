@@ -1,21 +1,23 @@
   <!-- navbar -------------------------------------------------------------------------------------------------------------------->
-  <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav">
-    <div class="navigation-items">
-      <a aria-current="page" class="logo-link w-nav brand w--current"><img src="https://electricayelectronica.uniandes.edu.co/sites/default/files/estudiantes/SinfonIA.png" width="120" sizes="104px" srcset="" alt="" class="logo-image"></a>
-      <div class="navigation-wrap"> 
-        <nav role="navigation" class="navigation-items w-nav-menu">
-          <a routerLink="/" routerLinkActive="active" aria-current="page" class ="navigation-item w-nav-link w--current">Home</a>
-          <a routerLink="about" routerLinkActive="active" class ="navigation-item w-nav-link w--current">About Us</a>
-          <a routerLink="tools" routerLinkActive="active" class ="navigation-item w-nav-link w--current">Our Tools</a>
-          <a routerLink="" routerLinkActive="active" class ="navigation-item w-nav-link w--current">Projects</a>
-        </nav>
-        <div class="menu-button w-nav-button"><img src="" width="22" alt="" class="menu-icon"> </div>
+  <nav [ngClass]="{'scrolled': isScrolled}">
+    <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation w-nav" >
+      <div class="navigation-items">
+        <a aria-current="page" class="logo-link w-nav brand w--current"><img src="https://electricayelectronica.uniandes.edu.co/sites/default/files/estudiantes/SinfonIA.png" width="120" sizes="104px" srcset="" alt="" class="logo-image"></a>
+        <div class="navigation-wrap"> 
+          <nav role="navigation" class="navigation-items w-nav-menu">
+            <a routerLink="/" routerLinkActive="active" aria-current="page" class ="navigation-item w-nav-link w--current">Home</a>
+            <a routerLink="about" routerLinkActive="active" class ="navigation-item w-nav-link w--current">About Us</a>
+            <a routerLink="tools" routerLinkActive="active" class ="navigation-item w-nav-link w--current">Our Tools</a>
+            <a routerLink="projects" routerLinkActive="active" class ="navigation-item w-nav-link w--current">Projects</a>
+          </nav>
+          <div class="menu-button w-nav-button"><img src="" width="22" alt="" class="menu-icon"> </div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- navbar -------------------------------------------------------------------------------------------------------------------->
+</nav>
+<!-- navbar -------------------------------------------------------------------------------------------------------------------->
   <router-outlet></router-outlet>
-  <!-- Footer -------------------------------------------------------------------------------------------------------------------------->
+<!-- Footer -------------------------------------------------------------------------------------------------------------------------->
 <footer>
   <div class="footer-wrap">
       <div class="div-block-2">
