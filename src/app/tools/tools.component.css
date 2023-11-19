@@ -1,3 +1,9 @@
+.heading-3 {
+    text-align:center;
+    font-weight: 300;
+    font-family: Montserrat, sans-serif;
+  }
+
 .button-container {
     display: flex;
     margin-top: 10px;
@@ -11,4 +17,49 @@
 
 .inf {
     margin-top: 30px;
+}
+
+.team {
+    text-align: center;
+    padding: 20px;
+    margin-left: 350px;
+    margin-right: 350px;
+    text-align: justify;
+
+  }
+
+
+  /* tools */
+
+.contenedor {
+    display: flex;
+    background-color: rgba(211, 250, 255, 0.725);
+}
+
+.inf, .section {
+    flex: auto; 
+    margin: 10px;
+    padding: 15px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-family: Montserrat, sans-serif;
+
+}
+
+.section {
+    margin-right: 10%;
+    margin-left: 10%;
+    
+}
+
+section {
+    margin-bottom: 10%;
+    margin-top: 10%;
+    font-family: Montserrat, sans-serif;
+    text-align: justify;
+}
+
+.btn {
+    background-color: #7a7a7a;
+    border: #ffffff;
 }
