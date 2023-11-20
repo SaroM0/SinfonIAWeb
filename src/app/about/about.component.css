@@ -228,6 +228,8 @@
   .tl-item:hover .tl-bg {
     filter: grayscale(0);
   }
+
+  
   
   .tl-content {
     transform: translate3d(0, 0, 0) translateY(25px);
@@ -258,6 +260,7 @@
     line-height: 0;
   }
   
+  
   .tl-bg {
     transform: translate3d(0, 0, 0);
     position: absolute;
@@ -270,4 +273,21 @@
     transition: filter 0.5s ease;
     filter: grayscale(100%);
   }
-  
+
+.tl-year {
+  transition: transform 0.3s ease;
+}
+
+.tl-item:hover .tl-year {
+  transform: translateY(-110px) translateX(-30px);
+}
+
+.tl-content {
+  transition: transform 0.3s ease;
+}
+
+.tl-item:hover .tl-content {
+  transform: translateY(-100px);
+  transition-delay: 0.1s; /* Agregamos un pequeño retraso para coordinar con la animación de los títulos */
+}
+
