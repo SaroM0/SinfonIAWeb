@@ -33,7 +33,7 @@
 .contenedor {
     display: flex;
     flex-direction: row;
-    background-color: #e6c7e5c3;
+    background-color: #c7d9e6c3;
     
 }
 
@@ -62,7 +62,7 @@ section {
 }
 
 .btn {
-    background-color: #cfafd5c3;
+    background-color: #212f3d;
     border: none;
     color: #ffffff;
 }
@@ -162,7 +162,7 @@ section {
     font-size: 16px;
     color: #fff;
     padding: 8px 16px;
-    background-color: #86bbd8;
+    background-color: #fff;
     border-radius: 6px;
     margin: 14px;
     cursor: pointer;
@@ -179,7 +179,7 @@ section {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #86bbd8;
+    background-color: #fff;
     border-radius: 25px 25px 0 25px;
 }
 
@@ -196,7 +196,7 @@ section {
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background-color: rgba(211, 250, 255, 0.725);
+    background-color: #fff;
 }
 
 .overlay::after {
@@ -210,12 +210,12 @@ section {
 }
 
 .swiper-navBtn:hover {
-    color: rgb(173, 173, 173);
+    color: rgb(180, 35, 35);
 }
 
 .swiper-navBtn::before,
 .swiper-navBtn::after {
-    color: azure;
+    color: #212f3d;
     font-size: 40px;
 }
 
@@ -228,7 +228,7 @@ section {
 }
 
 .swiper-pagination.bullet {
-    background-color: aqua;
+    background-color: #fff;
 }
 
 .swiper-pagination.bullet-active {
