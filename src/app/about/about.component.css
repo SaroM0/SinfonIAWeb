@@ -70,6 +70,7 @@
 
 #about2 {
     grid-area: 1 / 2 / 2 / 2;
+    display: flex;
 }
 
 .about-item {
