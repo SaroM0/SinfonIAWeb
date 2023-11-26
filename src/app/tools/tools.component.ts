@@ -11,7 +11,7 @@ export class ToolsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit():void {
+  ngOnInit(): void {
     const swiper = new Swiper('.slide-content', {
       slidesPerView: 4,
       spaceBetween: 25,
@@ -26,19 +26,24 @@ export class ToolsComponent implements OnInit {
         clickable: true,
         dynamicBullets: true
       },
-
-      breakpoints:{
-        0:{
-          slidesPerView:1,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
         },
-        520:{
-          slidesPerView:2,
+        520: {
+          slidesPerView: 2,
         },
-        950:{
-          slidesPerView:4,
+        950: {
+          slidesPerView: 4,
         },
       }
     });
   }
 
+  scrollToSection(sectionId: string): void {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

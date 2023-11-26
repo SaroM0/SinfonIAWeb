@@ -25,17 +25,17 @@
   </div>
   <div class="inf">
     <div class="d-grid gap-2" style="margin-top: 10px;">
-      <button type="button" class="btn btn-primary btn-lg"><a href="tools#task_tools_component">Task</a></button>
+      <button type="button" class="btn btn-primary btn-lg" (click)="scrollToSection('task-section')">Task</button>
     </div>
     <div class="button-container">
-      <button type="button" class="btn btn-primary btn-lg"><a href="tools#interface_tools_component">Interface</a></button>
-      <button type="button" class="btn btn-primary btn-lg"><a href="tools#nav_tools_component">Navigation</a></button>
-      <button type="button" class="btn btn-primary btn-lg"><a href="tools#percep_tools_component">Perception</a></button>
-      <button type="button" class="btn btn-primary btn-lg"><a href="tools#manip_tools_component">Manipulation</a></button>
-      <button type="button" class="btn btn-primary btn-lg"><a href="tools#speech_tools_component">Speech</a></button>
+      <button type="button" class="btn btn-primary btn-lg" (click)="scrollToSection('interface-section')">Interface</button>
+      <button type="button" class="btn btn-primary btn-lg" (click)="scrollToSection('navigation-section')">Navigation</button>
+      <button type="button" class="btn btn-primary btn-lg" (click)="scrollToSection('perception-section')">Perception</button>
+      <button type="button" class="btn btn-primary btn-lg" (click)="scrollToSection('manipulation-section')">Manipulation</button>
+      <button type="button" class="btn btn-primary btn-lg" (click)="scrollToSection('speech-section')">Speech</button>
     </div>
     <div class="d-grid gap-2" style="margin-top: 10px;">
-      <button type="button" class="btn btn-primary btn-lg">Toolkit</button>
+      <button type="button" class="btn btn-primary btn-lg" (click)="scrollToSection('toolkit-section')">Toolkit</button>
       <button type="button" class="btn btn-primary btn-lg" >Pepper robot</button>
     </div>
   </div>
@@ -43,7 +43,7 @@
 
 <!-- task team ------------------------------------------------------------------------------------------------------------------------------------------------------->
 <section>
-  <div class="section">
+  <div class="section" >
     <div class="container">
         <h1 class="heading-3">Administrative Team</h1>
           <p class="paragraph-light">At the heart of our organization is an efficient administrative team led by our advisor professor.
@@ -94,7 +94,7 @@
       </div>
   
 
-  <div class="section" id="task_tools_component">
+  <div class="section" id="task-section">
     <div class="container">
         <h1 class="heading-3"> Task Team</h1>
           <p class="paragraph-light">Task Team is a dedicated group specializing in the development of state-machines.
@@ -176,7 +176,7 @@
   </div>
 
 
-  <div class="section" id="interface_tools_component">
+  <div class="section" id="interface-section">
     <div class="container">
         <h1 class="heading-3"> Interface Team</h1>
           <p class="paragraph-light">The Interface team specializes in creating user-friendly visual tools for the robot's interface.
@@ -257,7 +257,7 @@
       </div>
   </div>
 
-  <div class="section" id="nav_tools_component">
+  <div class="section" id="navigation-section">
     <div class="container">
         <h1 class="heading-3"> Navigation Team</h1>
           <p class="paragraph-light">The Navigation team is all about making sure the robot can move around autonomously and
@@ -338,7 +338,7 @@
       </div>
   </div>
 
-  <div class="section" id="percep_tools_component">
+  <div class="section" id="perception-section">
     <div class="container">
         <h1 class="heading-3"> Perception Team</h1>
           <p class="paragraph-light">The Perception team specializes in harnessing the power of machine learning technologies,
@@ -447,7 +447,7 @@
       </div>
   </div>
 
-  <div class="section" id="manip_tools_component">
+  <div class="section" id="manipulation-section">
     <div class="container">
         <h1 class="heading-3"> Manipulation Team</h1>
           <p class="paragraph-light">The Manipulation team focuses on enhancing the robot's interaction with its environment through
@@ -556,7 +556,7 @@
       </div>
   </div>
 
-  <div class="section" id="speech_tools_component">
+  <div class="section" id="speech-section">
     <div class="container">
         <h1 class="heading-3"> Speech Team</h1>
           <p class="paragraph-light">The Speech team specializes in natural language processing to facilitate seamless interaction
